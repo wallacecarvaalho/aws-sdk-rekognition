@@ -164,4 +164,4 @@ app.post('/compare', upload, async (req, res) => {
   }
 });
 
-app.listen(3002, () => console.log('🚀 Servidor rodando na porta 3002'));
+app.listen(process.env.PORT || 3002, () => console.log('🚀 Servidor rodando na porta 3002'));
